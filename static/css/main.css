@@ -1,1 +1,13 @@
 /* Custom styles */
+body {
+    background: white;
+}
+
+.forma {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}

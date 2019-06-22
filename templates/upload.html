@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Upload</title>
+    <title>INVI - Situdado</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>    
 </head>
 <body>
-    <form id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
-        <strong>Files:</strong><br>
-        <input id="file-picker" type="file" name="file" accept="image/*" multiple>
-        <div id="msg"></div>
-        <input type="submit" value="Upload!" id="upload-button">
-    </form>
+    <div class="container">
+        <div class="row">
+            <div class="forma col-3">
+                <!-- <a href="/return-files/" target="blank"><button class='btn btn-default'>Download!</button></a> -->
+                <form id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+                    <!-- <strong>Sube tus imagenes:</strong><br> -->
+                    <input id="file-picker" type="file" name="file" accept="image/*" multiple>
+                    <div id="msg"></div>
+                    <input type="submit" value="Upload!" id="upload-button">
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 <script>
     $("#file-picker").change(function(){
@@ -18,7 +27,7 @@
         for(var i=0; i<input.files.length; i++){
             var ext= input.files[i].name.substring(input.files[i].name.lastIndexOf('.')+1).toLowerCase()
             if((ext == 'jpg') || (ext == 'png')){
-                $("#msg").text("Files are supported")
+                $("#msg").text("")
             }
             else{
                 $("#msg").text("Files are NOT supported")
