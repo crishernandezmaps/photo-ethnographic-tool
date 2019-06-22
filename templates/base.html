@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     {% block head %}
-    <title>SuperApp{% block title %}{% endblock %}</title>
+    <title>{% block title %}{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -11,6 +11,7 @@
 
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="{{ url_for('static', filename='ico/favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     {% endblock %}
   </head>
   <body>
@@ -22,15 +23,12 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">SuperApp</a>
+        <a class="navbar-brand" href="/">Situado App</a>
         <div class="nav-collapse">
           {% block navbar_right %}
           <ul class="nav navbar-nav pull-right">
-            {% if not session.logged_in %}
-              <li><a href="#">Login or Signup</a></li>
-            {% else %}
-              <li><a href="#">Logout</a></li>
-            {% endif %}
+              <li><a href="/">Home</a></li>
+              <li><a href="/upload">Upload</a></li>
           </ul>
           {% endblock %}
         </div><!--/.nav-collapse -->
@@ -45,13 +43,28 @@
         <hr>
         {% block footer %}
         <footer class="footer">
-            <p>&copy; SuperApp</p>
+            <p>Made by <a href='http://crishernandez.co'>&copy; Cris Hernandez</a></p>
         </footer>
         {% endblock %}
     </div>
     {% block js_footer %}
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
       <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+      <script>
+        $("#file-picker").change(function(){
+            var input = document.getElementById('file-picker');
+            for(var i=0; i<input.files.length; i++){
+                var ext= input.files[i].name.substring(input.files[i].name.lastIndexOf('.')+1).toLowerCase()
+                if((ext == 'jpg') || (ext == 'png')){
+                    $("#msg").text("Files are supported")
+                }
+                else{
+                    $("#msg").text("Files are NOT supported")
+                    document.getElementById("file-picker").value ="";
+                }
+            }
+        });
+        </script>
     {% endblock %}
   </body>
 </html>

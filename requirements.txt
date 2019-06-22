@@ -1,7 +1,10 @@
 Click==7.0
 Flask==1.0.3
+geojson==2.4.1
 gunicorn==19.9.0
+IPTCInfo3==2.0.3
 itsdangerous==1.1.0
 Jinja2==2.10.1
 MarkupSafe==1.1.1
+Pillow==6.0.0
 Werkzeug==0.15.4
