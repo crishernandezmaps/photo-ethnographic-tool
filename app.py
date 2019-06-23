@@ -96,7 +96,6 @@ def upload():
     )
 
     shutil.rmtree(target)
-    # return_files_tut(r)
     return r
 
 @app.route('/upload/<filename>')
@@ -107,3 +106,10 @@ def send_image(filename):
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port)
+
+
+### To do
+# Reduce the size of an image an add tags from an external file
+# Bit of style
+# Download GeoJson after process
+# Mapping
