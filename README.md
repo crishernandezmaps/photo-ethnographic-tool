@@ -1,5 +1,16 @@
 #  Herramienta para el procesamiento y georeferenciación de imágenes recolectadas en trabajo etnográfico de campo <sup>[1](#foot01)</sup>
 
+## Índice
+- [Presentación](https://github.com/crishernandezmaps/photo-ethnographic-tool#presentación)
+- [Objetivo](https://github.com/crishernandezmaps/photo-ethnographic-tool#objetivo)
+- [Desarrollo](https://github.com/crishernandezmaps/photo-ethnographic-tool#desarrollo)
+- [Alcances](https://github.com/crishernandezmaps/photo-ethnographic-tool#alcances)
+- [Aspectos técnicos](https://github.com/crishernandezmaps/photo-ethnographic-tool#aspectos-técnicos)
+    - [Lenguaje y Librerías](https://github.com/crishernandezmaps/photo-ethnographic-tool#lenguaje-y-librer%C3%ADas)
+    - [Instalación Local](https://github.com/crishernandezmaps/photo-ethnographic-tool#instalación-local)
+- [Versión Web](https://github.com/crishernandezmaps/photo-ethnographic-tool#versión-web)
+
+
 ## Presentación
 Esta herramienta es parte del trabajo realizado durante el segundo semestre del año 2018 y el primer semestre del año 2019, en el marco del proyecto FONDECYT Nº 1171554 "Prácticas de intervenir y habitar el territorio: develando el conocimiento urbano situado” (Jiron, Mansilla, Lange, Imilan, 2017).
 
@@ -47,7 +58,7 @@ Esta herramienta esta desarrollada en el lenguaje de programación [Python](http
 - Werkzeug==0.15.4
 
 ### Instalación Local
-Para poder utilizar la aplicación debes contar con Python3, Git y Github. Aquí instrucciones para la instalación en MacOS, Linux y Windows.
+Para poder utilizar la aplicación debes contar con Python3, Git y Github. Aquí instrucciones para la instalación en MacOS, Linux y Windows. En el procesamiento local es posible procesar cientos de imagenes al mismo tiempo.
 
 #### Python3
 Siempre y cuando no se tenga instalado ya Python3, se recomienda la instalación de Python3 mediante el Software Anaconda: https://www.anaconda.com/distribution/ (Python 3.7 version). Presionando el boton *Download* se descargará un ejecutable. Desde aquí la instalación es como cualquier otro programa.
@@ -75,7 +86,7 @@ Ejecutar los siguientes comandos en terminal/shell/command prompt:
 ## Versión Web
 Se ha realizado un deployment en la nube de la herramienta para su testeo. Se debe probar de la siguiente manera:
 - Visitar https://invi-app.herokuapp.com 
-- Subir imágenes (se recomienda un máximo de 5).
+- Subir imágenes (se recomienda un máximo de 5 si las imagenes pesan mas de 2MB).
 - Presionar *upload* y esperar por el resultado.
 - El resultado es un archivo del tipo GeoJson, el cual puede ser copiado y pegado a http://geojson.io para su visualización.
 - Una vez visualizado puede ser descargado desde *geojson.io* en formato **CSV** y guardado localmente en el computador.
