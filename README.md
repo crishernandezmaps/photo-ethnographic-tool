@@ -16,23 +16,24 @@ De especial interés también fue a la hora del desarrollo de esta herramienta, 
 El objetivo de la herramienta es la lectura de las fotografías alojadas localmente en el computador del investigador, la extracción de la metadata tanto [Exif](https://es.wikipedia.org/wiki/Exchangeable_image_file_format) como [Iptc](https://iptc.org/standards/photo-metadata/).
 
 ## Objetivo
-
 El trabajo de experimentación realizado buscó responder a la problemática sobre cuáles herramientas de uso libre y gratuito están disponibles para ser usadas o transformadas en dispositivos que facilitasen la labor investigativa etnográfica en terreno. En este sentido, la labor del equipo se volcó a sestear diversas tecnologías, ya sea brindándoles un nuevo uso (al que originalmente tienen) o desarrollando en diversos lenguajes de programación, herramientas propias.
 
 ## Desarrollo
-
 El desarrollo se basó en usar el insumo fotográfico, principalmente. Estas fotografías fueron procesadas por el equipo para agregar etiquetas a la metadata de la foto. Estas imágenes fueron rescatadas por el equipo en terreno con sus teléfonos celulares, con la salvedad que siempre debiese el GPS del móvil estuviera encendido. 
 
 La metadata de las imágenes fue extraída utilizando el lenguaje de programación Python (3.6). Así como también diversas librerías adicionales. De esta forma, la metadata contenida en la IPTC info de cada foto, fue extraída de forma automatizada. Las variables extraídas fueron las siguientes:
 	
-Etiquetas agregadas por el equipo
-Time Stamp
-Coordenadas de la posición donde fue tomada la foto.
+- Etiquetas agregadas por el equipo
+- Time Stamp
+- Coordenadas de la posición donde fue tomada la foto.
 
 Esta información permitió construir una visualización tanto de los puntos en un mapa donde las imágenes fueron tomadas como de las categorías a la que pertenecía cada imagen. Esto ya que las etiquetas agregadas por el equipo permitieron generar un menu que clasifica las imágenes. De esta forma, se agrupan de acuerdo a lo que el/la investigador(a) consideró que representaba dicha foto en terreno.
 
+## Alcances
+El alcance de esta experimentación en humanidades digitales (mezclar disciplinas sociales con ciencias de la computación), implica que desde este desarrollo, por su carácter de código abierto, pueden surgir nuevos desarrollos y mejoras, ya no solamente llevados adelante por el equipo original de este proyecto, sino que por cualquier investigador alrededor del mundo. Dicho alcance, permite que la investigación social, a través del lenguaje común internacional de la programación de software, pueda expandir su quehacer de forma global.
+
 ## Aspectos técnicos
-### Software
+### Lenguaje y Librerías
 Esta herramienta esta desarrollada en el lenguaje de programación [Python](https://www.python.org/) (versión 3.6.4). Las librerías utilizadas son:
 - Click==7.0
 - Flask==1.0.3
@@ -44,6 +45,9 @@ Esta herramienta esta desarrollada en el lenguaje de programación [Python](http
 - MarkupSafe==1.1.1
 - Pillow==6.0.0
 - Werkzeug==0.15.4
+
+### Instalación Local
+### Deployment en Heroku
 
 ---
 <a name="foot01">(1)</a> Elaborado por [Cris Hernández](http://crishernandez.co), Geógrafo, Universidad de Chile. Junio del 2019.<br/>
