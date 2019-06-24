@@ -27,13 +27,9 @@ Esta herramienta esta desarrollada en el lenguaje de programación [Python](http
 - Pillow==6.0.0
 - Werkzeug==0.15.4
 
-
----
-
 ---
 <a name="foot01">1</a>: Autor: [Cris Hernández](http://crishernandez.co).
-<a name="foot02">2</a>: 
-#### Para instalar IPTCinfo3
+<a name="foot02">2</a>: Para instalar IPTCinfo3
 1. Descargar o clonar repo https://github.com/crccheck/iptcinfo3
 2. Para evitar los numerosos Warning (si esto ocurriera): https://stackoverflow.com/questions/50407738/python-disable-iptcinfo-warning (opcional)
 3. cd en iptcinfo3
