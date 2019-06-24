@@ -47,7 +47,40 @@ Esta herramienta esta desarrollada en el lenguaje de programación [Python](http
 - Werkzeug==0.15.4
 
 ### Instalación Local
-### Deployment en Heroku
+Para poder utilizar la aplicación debes contar con Python3, Git y Github. Aquí instrucciones para la instalación en MacOS, Linux y Windows.
+
+#### Python3
+Siempre y cuando no se tenga instalado ya Python3, se recomienda la instalación de Python3 mediante el Software Anaconda: https://www.anaconda.com/distribution/ (Python 3.7 version). Presionando el boton *Download* se descargará un ejecutable. Desde aquí la instalación es como cualquier otro programa.
+
+- Instalar Anaconda en MacOs: https://www.youtube.com/watch?v=nVlrpNf3EdM
+- Instalar Anaconda en Linux (Ubuntu): https://www.youtube.com/watch?v=DY0DB_NwEu0 
+- Instalar Anaconda en Windows: https://www.youtube.com/watch?v=52h3r_lROGY (Video)
+
+#### Git
+[Git](https://git-scm.com/downloads) es un sistema de versionado de código que nos permite construir software de forma colaborativa. Se puede encontrar el descargable para instalar en los tres sistemas operativos antes mencionados, aquī: https://git-scm.com/downloads
+
+#### Github
+Github es un servicio que aloja Git. En Github podemos realizar versionado de código en līnea. Solo requiere contar con una cuenta de usuario y activación por parte del usuario: https://github.com.
+
+#### Instalación
+- git clone https://github.com/crishernandezmaps/invi_app.git
+- cd invi_app
+- pip install -r requirements.txt
+- export FLASK_APP=app.py
+- export FLASK_ENV=development
+- flask run
+- La app se desplegará en el puerto http://127.0.0.1:5000/ (visita esta dirección en tu Browser - Safari, Firefox, Chrome)
+
+## Versión Web
+Se ha realizado un deployment en la nube de la herramienta para su testeo. Se debe probar de la siguiente manera:
+- Visitar https://invi-app.herokuapp.com 
+- Subir imágenes (se recomienda un máximo de 5).
+- Presionar *upload* y esperar por el resultado.
+- El resultado es un archivo del tipo GeoJson, el cual puede ser copiado y pegado a http://geojson.io para su visualización.
+- Una vez visualizado puede ser descargado desde *geojson.io* en formato **CSV** y guardado localmente en el computador.
+- Visitar **CARTO** (https://carto.com) y subir una nueva **base de datos** o **dataset**.
+- Una vez que se ha subido el archivo CSV, se podrá visualizar como un mapa dinámico, el cual se puede visitar en una url. Como este mapa de ejemplo: https://crishmill.carto.com/builder/ec6d7456-5954-4dd9-ab0a-84a8a834693b 
+
 
 ---
 <a name="foot01">(1)</a> Elaborado por [Cris Hernández](http://crishernandez.co), Geógrafo, Universidad de Chile. Junio del 2019.<br/>

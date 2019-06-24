@@ -111,8 +111,6 @@ if __name__ == "__main__":
     app.run(host='0.0.0.0', port=port)
 
 
-### To do
+### Improvements
 # Reduce the size of an image an add tags from an external file
-# Bit of style
-# Download GeoJson after process
-# Mapping
+# Download GeoJson after process automaticly
