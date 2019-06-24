@@ -63,6 +63,7 @@ Siempre y cuando no se tenga instalado ya Python3, se recomienda la instalación
 Github es un servicio que aloja Git. En Github podemos realizar versionado de código en līnea. Solo requiere contar con una cuenta de usuario y activación por parte del usuario: https://github.com.
 
 #### Instalación
+Ejecutar los siguientes comandos en terminal/shell/command prompt:
 - git clone https://github.com/crishernandezmaps/invi_app.git
 - cd invi_app
 - pip install -r requirements.txt

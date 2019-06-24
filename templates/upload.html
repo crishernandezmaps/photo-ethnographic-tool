@@ -8,13 +8,32 @@
 </head>
 <body>
     <div class="container">
+        <div class="centerlize">
+            <h1>Herramienta para el procesamiento y georeferenciación de imágenes recolectadas en trabajo etnográfico de campo</h1>
+            <p class="lead">
+                Esta herramienta es parte del trabajo realizado durante el segundo semestre del año 2018 y el primer semestre del año 2019, 
+                en el marco del proyecto FONDECYT Nº 1171554 "Prácticas de intervenir y habitar el territorio: develando el conocimiento 
+                urbano situado” (Jiron, Mansilla, Lange, Imilan, 2017). 
+            </p>
+            <p>El objetivo de esta herramienta es poder servir como complemento al trabajo etnográfico de campo, y la extracción sencilla mediante
+                software libre de metadata (fecha, coordendas geográficas, palabras clave) en imágenes tomadas desde el celular.
+            </p>
+            <p>Consideraciones:</p>
+            <ul>
+                <li>- Las imágenes deben ser tomadas desde un celular o tablet con el GPS activado.</li>
+                <li>- Las imágenes deben ser descargadas al computador. Si pasan por correo electrónico o sistema de mensajerīa,
+                    las imágenes perderán la metadata.
+                </li>
+            </ul>
+            <p>Desarrollado por <a href="http://crishernandez.co">Cris Hernández</a>.</p>
+            <p>Si tiene dudas o desea colaborar, escribir a <a href="mailto:crishmill@uchilefau.cl">crishmill@uchilefau.cl</a></p>
+            <p class="lead"><a class="btn btn-primary btn-lg" href="https://github.com/crishernandezmaps/photo-ethnographic-tool" role="button">Saber más</a></p>
+            <hr class="my-4">
+        </div>
         <div class="row">
             <div class="forma col-3">
-                <!-- <a href="/return-files/" target="blank"><button class='btn btn-default'>Download!</button></a> -->
                 <form id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
-                    <!-- <strong>Sube tus imagenes:</strong><br> -->
                     <input id="file-picker" type="file" name="file" accept="image/*" multiple>
-                    <div id="msg"></div>
                     <input type="submit" value="Upload!" id="upload-button">
                 </form>
             </div>

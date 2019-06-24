@@ -1,13 +1,27 @@
 /* Custom styles */
 body {
+    margin: 0,
+    padding: 0,
     background: white;
+}
+
+
+.centerlize {
+    margin: 0 auto;
+    width: 70vw;
+    height: 100vh;
+    color: #333;
 }
 
 .forma {
     width: 30%;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 40%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+}
+
+h1 {
+
 }
