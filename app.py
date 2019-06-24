@@ -44,7 +44,9 @@ def upload():
         upload.save(destination)
     
     collection = []
-    lisOfBigImages = getFileWithExt('jpg',target)
+    list_jpg = getFileWithExt('jpg',target)
+    list_png = getFileWithExt('png',target)
+    lisOfBigImages = list_jpg + list_png
     for i in lisOfBigImages:
         try:
             openSmall = Image.open(i)
