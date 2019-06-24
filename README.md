@@ -30,8 +30,8 @@ Esta herramienta esta desarrollada en el lenguaje de programación [Python](http
 ---
 <a name="foot01">1</a>: Autor: [Cris Hernández](http://crishernandez.co) <br/>
 <a name="foot02">2</a>: Para instalar IPTCinfo3
-1. Descargar o clonar repo https://github.com/crccheck/iptcinfo3
-2. Para evitar los numerosos Warning (si esto ocurriera): https://stackoverflow.com/questions/50407738/python-disable-iptcinfo-warning (opcional)
-3. cd en iptcinfo3
-4. Modificar iptcinfo3.py y setup.py por el shebang adecuado si utilizas Python3: #!/usr/bin/env python3 (opcional)
-5. Finalmente python3 setup.py install
+* Descargar o clonar repo https://github.com/crccheck/iptcinfo3
+* Para evitar los numerosos Warning (si esto ocurriera): https://stackoverflow.com/questions/50407738/python-disable-iptcinfo-warning (opcional)
+* cd en iptcinfo3
+* Modificar iptcinfo3.py y setup.py por el shebang adecuado si utilizas Python3: #!/usr/bin/env python3 (opcional)
+* Finalmente python3 setup.py install
