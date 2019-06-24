@@ -45,12 +45,13 @@ def upload():
     
     collection = []
     list_jpg = getFileWithExt('jpg',target)
+    list_JPG_2 = getFileWithExt('JPG',target)
     list_png = getFileWithExt('png',target)
-    lisOfBigImages = list_jpg + list_png
+    lisOfBigImages = list_jpg + list_png + list_JPG_2
     for i in lisOfBigImages:
         try:
-            openSmall = Image.open(i)
-            exif = { ExifTags.TAGS[k]: v for k, v in openSmall._getexif().items() if k in ExifTags.TAGS }
+            f = Image.open(i)
+            exif = { ExifTags.TAGS[k]: v for k, v in f._getexif().items() if k in ExifTags.TAGS }
             dateTime = exif['DateTime'][0:10].replace(':','-').strip()
             lat = [float(x)/float(y) for x, y in exif['GPSInfo'][2]]
             lon = [float(x)/float(y) for x, y in exif['GPSInfo'][4]]
