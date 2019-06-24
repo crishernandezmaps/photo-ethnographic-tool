@@ -1,7 +1,7 @@
 #  Herramienta para el procesamiento y georeferenciación de imágenes recolectadas en trabajo etnográfico de campo <sup>[1](#foot01)</sup>
 
 ## Presentación
-El siguiente documento da cuenta del trabajo realizado durante el segundo semestre del año 2018 y el primer semestre del año 2019. Se describe el resultado final de la experimentación en humanidades digitales realizada en el marco del proyecto FONDECYT Nº 1171554 "Prácticas de intervenir y habitar el territorio: develando el conocimiento urbano situado” (Jiron, Mansilla, Lange, Imilan, 2017)
+Esta herramienta es parte del trabajo realizado durante el segundo semestre del año 2018 y el primer semestre del año 2019, en el marco del proyecto FONDECYT Nº 1171554 "Prácticas de intervenir y habitar el territorio: develando el conocimiento urbano situado” (Jiron, Mansilla, Lange, Imilan, 2017).
 
 El [Instituto de la Vivienda de la Facultad de Arquitectura y Urbanismo](https://vivienda.uchilefau.cl/) de la [Universidad de Chile](http://www.uchile.cl/), ha creado para el proyecto Fondecyt Situado una herramienta de código abierto para el procesamiento de imágenes y la extracción y agregación de [metadata](https://es.wikipedia.org/wiki/Metadatos).
 
