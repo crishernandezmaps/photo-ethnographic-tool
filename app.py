@@ -76,7 +76,7 @@ def upload():
                     "name": i,
                     "date": dateTime,
                     "tags": kw,
-                    "image": ''.join(["https://invi-images.s3.us-east-2.amazonaws.com/",i]),
+                    "image": ''.join(["https://invi-images.s3.us-east-2.amazonaws.com/img/",i]),
                     "author": "FONDECYT N1171554, INVI - U. of Chile, 2018/9"
                 }
             } 
