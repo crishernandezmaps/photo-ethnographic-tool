@@ -6,5 +6,5 @@ IPTCInfo3==2.0.3
 itsdangerous==1.1.0
 Jinja2==2.10.1
 MarkupSafe==1.1.1
-Pillow==6.0.0
+Pillow==8.3.2
 Werkzeug==0.15.4
